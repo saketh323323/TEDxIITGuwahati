@@ -1,0 +1,442 @@
+/* homeStyles.module.css */
+body {
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 10vw;
+  padding-top: 20px;
+  padding-bottom: 5vw;
+}
+
+.header {
+  border-top: 5px solid #fe2b07;
+  padding: 20px;
+}
+
+.span {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  color: #fe2b07;
+}
+
+.divA {
+  margin-right: 10px;
+  margin-bottom: -13px;
+}
+
+.article {
+  /* position: relative; */
+  /* background: #f7f7f7; */
+  border-top: 5px solid #fe2b07;
+  /* border-bottom: 1px solid #000; */
+}
+
+.content {
+  max-width: 45vw;
+  padding: 0 0 3rem 3rem;
+  font-weight: 450;
+  font-size: 18px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  margin: 30px auto;
+}
+
+.small {
+  font-size: 16px;
+}
+
+.subheading {
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+  background: #e42301;
+  padding: 5px 1rem;
+  /* margin-left: -5rem; */
+  margin-bottom: 3rem;
+  display: inline-block;
+  font-size: 1.4rem;
+}
+
+.linkSpan {
+  border: 3px solid red;
+  padding: 10px;
+}
+
+.link {
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.parastyle {
+  line-height: 1.7em;
+  font-size: 0.9em;
+  margin-bottom: 2rem;
+}
+
+.buyTickets {
+  width: 40vw;
+}
+
+@media (max-width: 560px) {
+  .container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content {
+    max-width: 80vw;
+    padding: 0 0 3rem 2rem;
+    font-weight: 450;
+  }
+
+  .span {
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fe2b07;
+  }
+  .link {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.65em;
+  }
+
+  .buyTickets {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 1050px) {
+  .container {
+    align-items: center;
+    justify-content: center;
+  }
+
+	.content {
+		max-width: 85vw;
+		padding: 0 0 3rem 3rem;
+		font-weight: 450;
+		margin-left: 5px;
+	}
+  .content {
+    max-width: 85vw;
+    padding: 0 0 3rem 6rem;
+    font-weight: 450;
+    margin-left: 5px;
+  }
+
+  .span {
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fe2b07;
+  }
+}
+
+/*Buy Tickets*/
+
+.conference_box {
+  height: 700px;
+}
+
+.innerbox {
+  display: flex;
+  flex-direction: column;
+  content: "";
+  position: absolute;
+  top: 50px;
+  right: -74px;
+  bottom: 100px;
+  width: 380px;
+  height: 600px;
+  background: linear-gradient(180deg, #ff0000 0%, #333333 99.99%);
+  border-radius: 20px;
+  color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px black;
+}
+
+/* .innerbox :hover {
+  background: linear-gradient(180deg, #4d4b4b 0%, #ece9e9 99.99%);
+  color: rgb(241, 8, 8);
+  box-shadow: 0px 0px 10px black;
+} */
+
+.line {
+  width: 70%;
+  justify-self: center;
+  align-self: center;
+}
+
+.booking_tickets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 2em;
+  padding: 30px;
+}
+
+.booking_tickets button {
+  background-color: inherit;
+  color: white;
+  width: 60%;
+}
+
+.booking_tickets button:hover {
+  cursor: pointer;
+  scale: 1.1;
+  transition-duration: 0.25s;
+}
+
+.date {
+  padding: 10px;
+  color: white;
+}
+
+.date h3 {
+  text-align: center;
+  color: white;
+  font-size: 28px;
+  line-height: 1em;
+  margin: 5px;
+}
+
+.time > h5 {
+  text-align: center;
+  color: white;
+  font-size: 23px;
+  padding: 10px;
+}
+
+@media (min-width: 310px) and (max-width: 436px) {
+  .innerbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    content: "";
+    position: absolute;
+    top: 3%;
+    right: -110px;
+    bottom: 100px;
+    width: 90vw;
+    height: 600px;
+    background: linear-gradient(180deg, #ff0000 0%, #333333 99.99%);
+    border-radius: 40px;
+    color: white;
+  }
+}
+@media (min-width: 760px) and (max-width: 1050px) {
+  .innerbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    content: "";
+    position: absolute;
+    top: 3%;
+    right: -21px;
+    bottom: 100px;
+    width: 380px;
+    height: 600px;
+    background: linear-gradient(180deg, #ff0000 0%, #333333 99.99%);
+    border-radius: 40px;
+    color: white;
+  }
+}
+@media (min-width: 437px) and (max-width: 570px) {
+  .innerbox {
+    display: flex;
+    flex-direction: column;
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: -102px;
+    bottom: 79px;
+    width: 380px;
+    height: 600px;
+    background: linear-gradient(180deg, #ff0000 0%, #333333 99.99%);
+    border-radius: 20px;
+    color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px black;
+  }
+}
+ 
+@media (min-width: 670px) and (max-width: 760px) {
+  .innerbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    content: "";
+    position: absolute;
+    top: 3%;
+    right: -46px;
+    bottom: 100px;
+    width: 380px;
+    height: 600px;
+    background: linear-gradient(180deg, #ff0000 0%, #333333 99.99%);
+    border-radius: 40px;
+    color: white;
+  }
+}
+
+@media (max-width: 310px) {
+  .innerbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    content: "";
+    position: absolute;
+    top: 3%;
+    right: -89px;
+    bottom: 100px;
+    width: 90vw;
+    height: 600px;
+    background: linear-gradient(180deg, #ff0000 0%, #333333 99.99%);
+    border-radius: 40px;
+    color: white;
+  }
+
+  /* .date h3 {
+		text-align: center;
+		color: white;
+		line-height: 1em;
+		margin: 5px;
+		font-size: 20px;
+	}
+
+	.time>h5 {
+		text-align: center;
+		color: white;
+		padding: 10px;
+		font-size: 20px;
+	} */
+
+  .booking_tickets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.3em;
+    padding: 30px;
+  }
+}
+
+@media (min-width: 310px) and (max-width: 350px) {
+  .innerbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    content: "";
+    position: absolute;
+    top: 3%;
+    right: -89px;
+    bottom: 100px;
+    width: 90vw;
+    height: 600px;
+    background: linear-gradient(180deg, #ff0000 0%, #333333 99.99%);
+    border-radius: 40px;
+    color: white;
+  }
+}
+@media (min-width: 350px) and (max-width: 400px) {
+  .innerbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    content: "";
+    position: absolute;
+    top: 3%;
+    right: -98px;
+    bottom: 100px;
+    width: 90vw;
+    height: 600px;
+    background: linear-gradient(180deg, #ff0000 0%, #333333 99.99%);
+    border-radius: 40px;
+    color: white;
+  }
+}
+
+/*Schedule table*/
+
+/* Speakers Heading*/
+
+.speaker{
+  color: #6EC1E400;
+  font-family: "Roboto",Sans-serif;
+  font-size: 70px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 1px;
+  stroke-width: 73px;
+  -webkit-text-stroke-color: #EE372459;
+  stroke: #EE372459;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+}
+
+.flex_container{
+  justify-content: center;
+  align-items: center;
+}
+
+.event{
+  position: absolute;
+    bottom: 115px;
+    right: 12vw;
+    text-align: center;
+}
+
+.arrow1>div>div{
+  position: absolute;
+  right: 10%;
+  top: -37px;
+}
+
+.center_elm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (width >500px) and (width < 721px){
+  .speaker{
+    /* font-size: 56px; */
+  }
+  
+  .h2x{
+    /* font-size: 18.5px; */
+  }
+}
+
+@media (width >370px) and (width < 500px){
+  .speaker{
+    font-size: 56px;
+  }
+  
+  .h2x{
+    font-size: 18.5px;
+  }
+}
+
+@media (width < 371px){
+  .speaker{
+    font-size: 44px;
+  }
+  
+  .h2x{
+    font-size: 12.5px;
+  }
+}

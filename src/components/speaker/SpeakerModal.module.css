@@ -1,0 +1,153 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100000;
+    background-color: black;
+    opacity: 0.7;
+}
+.modal{
+    overflow-y: auto;
+    border-top: 4px solid #fe2b07;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+.box {
+    margin-top: 2rem;
+    width: 50%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transition: all 0.3s;
+    color: black;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    border-radius: 0.3rem;
+    left: 50%;
+    z-index: 100000;
+    transform:translateX(-50%);
+    opacity: 1;
+    visibility: visible;
+    
+}
+.name h2 {
+    text-transform: capitalize;
+    text-align: left;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.close {
+    border: none;
+    font-size: 1rem;
+    color: white;
+    background-color: #ffffff00;
+    text-decoration: underline;
+    font-weight: 700;
+    display: flex;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+    align-items: center;
+}
+.x{
+    font-size: 1rem;
+    color: red;
+}
+
+.close:hover{
+    color: red;
+}
+.close:hover .x{
+    transition: all 0.2s;
+    scale: 1.15;
+}
+.icon{
+    font-size: 0.7rem;
+    display: flex;
+    margin-right: 2px;
+}
+.name ul {
+    margin: 1rem 0 0 5px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.link {
+    color: #fe2b07;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    margin-left: 0.5rem;
+    font-weight: 300;
+}
+
+.link:hover {
+    color: black;
+    scale: 1.2;
+}
+
+#posi {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+    background: #E42301;
+    padding: 5px 0.5rem;
+    margin-left: 1.2rem;
+    margin-bottom: 1.8rem;
+    display: inline-block;
+    font-size: 1.1rem;
+}
+
+.name {
+    position: relative;
+    padding: 3rem 3rem 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    padding: 0 3rem 3rem 3rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+
+
+#image_ {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.7s;
+}
+
+.img {
+    height: 20rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img:hover #image_ {
+    scale: 1.1;
+}
+@media screen and (max-width: 1160px){
+.box {
+    width: 75%;
+}}
+@media screen and (max-width: 768px){
+.box {
+    width: 90%;
+}}
+@media screen and (max-width: 500px){
+.name {
+    display: block;
+}}

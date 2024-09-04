@@ -1,0 +1,92 @@
+.carouselImage{
+    width: 7% !important;
+    margin: 30px 0;
+}
+
+
+.TEDxIITGuwahatiLogo{
+    width: 30% !important;
+    margin-bottom: 16px;
+}
+.icon{
+    color: red;
+    font-size: 84%;
+    margin-left: 6px;
+}
+
+.carouselContent{
+    font-size: 20px;
+    width: 75%;
+    margin: auto;
+    line-height: 32px;
+}
+
+.button{
+    height: 50px;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover{
+    scale: 105%;
+}
+
+
+@media (width < 1100px){
+    .carouselContent{
+        width: 80%;
+    }
+}
+@media (width < 900px){
+    .carouselImage{
+        width: 20% !important;
+    }
+}
+@media (width < 640px){
+    .carouselImage{
+        width: 50% !important;
+    }
+    .TEDxIITGuwahatiLogo{
+        width: 60% !important;
+        margin-bottom: 10px;
+    }
+    .carouselContent{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 10;
+        overflow: hidden;
+    }
+    
+}
+@media (width < 540px){
+    .carouselContent{
+        font-size: 18px;
+    }
+    .carouselImage{
+        width: 35% !important;
+    }
+}
+@media (width < 350px){
+    .carouselImage{
+        width: 43% !important;
+    }
+    .TEDxIITGuwahatiLogo{
+        width: 100% !important;
+    }
+    .carouselContent{
+        font-size: 18px;
+        -webkit-line-clamp: 8;
+    }
+    .button{
+        width: 180px;
+    }
+}
+

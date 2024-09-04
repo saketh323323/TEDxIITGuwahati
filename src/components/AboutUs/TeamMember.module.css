@@ -1,0 +1,102 @@
+.imgBox {
+  padding: 20px 50px;
+}
+
+
+
+.imgBox img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform: scale(1, 1);
+}
+
+
+.imgBox img {
+  --color: #ee3624;
+  --border: 10px;
+  --offset: 20px;
+  --gap: 5px;
+
+  --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),
+    var(--color) 0;
+  --_o: calc(3 * var(--offset));
+  padding: calc(var(--gap) + var(--border)) calc(var(--gap) + var(--border) + var(--offset)) calc(var(--gap) + var(--border) + var(--offset)) calc(var(--gap) + var(--border));
+  background: linear-gradient(var(--_c)) var(--_o) var(--_o),
+    linear-gradient(90deg, var(--_c)) var(--_o) var(--_o);
+  background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+
+.imgBox img:hover {
+  background-position: 0px 0px;
+  background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
+}
+
+.imgTitle {
+  /* margin-top: 10px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgTitleName {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.imgTitlePost {
+  padding-top: 3px;
+  font-weight: 300;
+}
+
+
+
+.imgBoxm {
+  padding: 20px 50px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.imgBoxm img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform: scale(1, 1);
+  --color: #ee3624;
+  --border: 10px;
+  --offset: 20px;
+  --gap: 5px;
+  --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),
+    var(--color) 0;
+  --_o: calc(3 * var(--offset));
+  padding: calc(var(--gap) + var(--border)) calc(var(--gap) + var(--border) + var(--offset)) calc(var(--gap) + var(--border) + var(--offset)) calc(var(--gap) + var(--border));
+  background: linear-gradient(var(--_c)) var(--_o) var(--_o),
+    linear-gradient(90deg, var(--_c)) var(--_o) var(--_o);
+  background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.link{
+  color: black;
+}
+
+.imgBoxm.scrolled img {
+  background-position: 0px 0px;
+  background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
+  filter: grayscale(0);
+  transition:cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+
+.hovereffm {
+  position: absolute;
+  top: 41.2px;
+  right: 93px;
+  display: flex;
+  flex-direction: column;
+}

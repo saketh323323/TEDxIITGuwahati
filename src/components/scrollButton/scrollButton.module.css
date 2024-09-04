@@ -1,0 +1,38 @@
+.progressWrap{
+    height: 60px;
+    width: 60px;
+    /* background-color: #e62b1e; */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#progressValue {
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#progressValue svg {
+  animation: gototop 1.2s linear infinite alternate-reverse;
+}
+
+@keyframes gototop {
+  0% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}

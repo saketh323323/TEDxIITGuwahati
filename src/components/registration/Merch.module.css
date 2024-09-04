@@ -1,0 +1,160 @@
+.contentContainer{
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 150px;
+}
+
+.heading{
+    font-size: 50px;
+    margin: 70px;
+    margin-right: 90px;
+}
+
+.fadeBelowAnimation{
+    animation: fadeInFromBelow 3s;
+}
+
+@keyframes fadeInFromBelow{
+    0%{
+        
+        transform: translatey(50px);
+        opacity: 0;
+    }
+    40%{
+        transform: translatey(0px);;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.cardsContainer{
+    display: grid;
+    grid-template-columns:auto auto;
+    row-gap: 50px;
+    column-gap: 30px;
+    place-items: center;
+}
+
+@media (width < 1050px) {
+    .cardsContainer{
+        grid-template-columns: auto;
+        row-gap: 40px;
+    }
+}
+
+@media (width<600px){
+    .heading{
+        font-size: 50px;
+    }
+}
+
+@media (width<500px){
+    .heading{
+        font-size: 40px;
+        margin: 70px auto;
+    }
+}
+/* @media (width<420px){
+    .heading{
+        font-size: 32px;
+    }
+}
+@media (width<380px){
+    .heading{
+        font-size: 28px;
+    }
+} */
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .fadeInAnimation {
+    animation: fadeIn 2s;
+  }
+  
+  .main {
+    margin: auto;
+  }
+  
+  .contentContainer {
+    margin: 2rem 5vw;
+  }
+  
+  .upper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .message {
+    max-width: 600px;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    margin: 50px;
+  }
+  
+  .overheading {
+    color: #eb0028;
+    /* font-weight: 800; */
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 70px;
+  }
+  
+  /* .heading {
+    font-size: 3rem;
+    font-weight: 700;
+    max-width: 480px;
+    margin: 10px 0;
+  } */
+
+  @media (width < 1000px) {
+    .upper {
+      flex-direction: column;
+      align-items: start;
+    }
+    .message {
+      margin-top: 30px;
+      max-width: 500px;
+    }
+    
+  }
+
+  .buttonContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .buttonContainer a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .bookButton {
+    margin-top: 60px;
+    width: 15%;
+    height: 70px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }

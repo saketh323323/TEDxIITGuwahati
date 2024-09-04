@@ -1,0 +1,34 @@
+.main {
+    margin: auto;
+}
+
+.h1{
+    padding-bottom: 20px;
+
+}
+
+.h2term{
+    padding-left:10px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.p2{
+     padding-left:20px;
+}
+
+
+
+
+
+.termtextwrapper_unique{
+    padding-left:15px;
+
+
+}
+
+.termlist{
+list-style-type: none;
+padding-left:25px;
+}
+

@@ -1,0 +1,321 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeInAnimation {
+  animation: fadeIn 2s;
+}
+
+.main {
+  margin: auto;
+}
+
+.contentContainer {
+  margin: 2rem 5vw;
+}
+
+.upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message {
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.overheading {
+  color: #eb0028;
+  font-weight: 800;
+  font-size: 1.09rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.heading {
+  font-size: 4rem;
+  font-weight: 700;
+  max-width: 480px;
+  margin: 10px 0;
+}
+
+.ticketContainer {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.ticket {
+  width: 450px;
+  height: fit-content;
+  background-color: #e8e8e8;
+  position: relative;
+}
+
+.ticket:nth-child(even) {
+  margin-left: 50px;
+}
+
+.passContainer {
+  height: 200px;
+  background-color: black;
+  color: white;
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  filter: blur(1px) brightness(90%);
+}
+
+.passname {
+  position: absolute;
+  bottom: 0;
+  margin: 30px;
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  z-index: 3;
+}
+
+.ticketDetails {
+  background-color: white;
+  margin: 0px 20px 40px 20px;
+}
+
+.priceContainer {
+  padding: 20px;
+}
+
+.priceHeading {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+  color: #8c8c8c;
+  margin: 20px 0px 0 5px;
+}
+
+.priceValue {
+  font-size: 29px;
+  margin: 5px;
+  letter-spacing: -2px;
+}
+
+.line {
+  margin: 40px 2px;
+  height: 2px;
+  width: 90%;
+  background: repeating-linear-gradient(90deg, #ffffff 0 10px, #cdcdcd 0 25px);
+}
+
+.nudges,
+.nudges2 {
+  position: absolute;
+  background-color: transparent;
+  top: 32.5%;
+  width: 100%;
+  display: flex;
+}
+
+.nudges2 {
+  top: 40.5%;
+}
+
+.triangle1,
+.triangle2 {
+  width: 20px;
+}
+
+.triangle2 {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.details {
+  margin: 90px auto;
+  margin-bottom: 20px;
+  width: 80%;
+  min-height: 500px;
+}
+
+.detailsHeading {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.list,
+.listStudent {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  list-style-image: url("/public/Images/Registration/tick.svg");
+}
+
+.listStudent {
+  list-style: "-";
+}
+
+.listItem,
+.listItemStudent {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.listItemStudent {
+  padding-left: 5px;
+}
+
+.footer {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookButton {
+  margin: 20px auto;
+  width: 80%;
+  height: 70px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.circleContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0px 10px;
+  transform: translateY(50%);
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: white;
+  border-radius: 50%;
+}
+
+.termsCondButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.linkSpan {
+  border: 3px solid red;
+  padding: 5px 10px;
+}
+
+.linkSpan:hover{
+  transform: scale(1.1);
+  transition: all 0.25s ease-in-out;
+}
+
+.link {
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.arrow {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 5px 5px;
+  font-size: 30px;
+  top: 2.5px;
+}
+
+@media (width < 1000px) {
+  .upper {
+    flex-direction: column;
+    align-items: start;
+  }
+  .message {
+    margin-top: 30px;
+    max-width: 500px;
+  }
+}
+
+@media (width < 760px) {
+  .ticketContainer {
+    flex-direction: column;
+  }
+  .ticket:nth-child(even) {
+    margin: auto;
+  }
+  .ticket {
+    margin: 100px auto;
+  }
+  .details {
+    max-height: none;
+  }
+}
+
+@media (width<500px) {
+  .ticket {
+    width: 98%;
+  }
+  .circle:nth-last-child(1) {
+    display: none;
+  }
+  .ticketContainer {
+    margin-top: 0px;
+  }
+}
+
+@media (width < 350px) {
+  .passname {
+    font-size: 38px;
+  }
+  .image {
+    width: 200px;
+  }
+  .nudges {
+    top: 30%;
+  }
+  .heading {
+    font-size: 50px;
+  }
+  .circle:nth-last-child(2) {
+    display: none;
+  }
+}
+
+#overlay {
+  position: fixed;
+  /* opacity: 1; */
+  z-index: 9;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.846);
+}

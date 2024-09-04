@@ -1,0 +1,96 @@
+
+
+
+.form_button{
+  padding-top: 30px;
+  box-sizing:border-box;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  font-size: 0.8 rem;
+  line-height: 1.8;
+  /* font-weight: 400; */
+
+
+}
+
+.buttonCont
+{
+  display: flex;
+  width: 70%;
+}
+
+.blinkingAnimation{
+    animation: blinking 1s infinite;
+
+}
+
+.button {
+  width: fit-content;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background: #e60028;
+  border: none;
+  color: white;
+  transition: all 0.5s;
+  margin: 20px auto;
+  display: inline-block;
+}
+
+.button>a
+{
+  text-decoration: none;
+  color: white;
+}
+
+.button:after {
+  content: '';
+  position: relative;
+  width: 0.5em;
+  height: 0.5em;
+  font-weight: 400;
+  border-right: .1em solid #fff;
+  border-bottom: .1em solid #fff;
+  transform: rotate(-45deg);
+  top: -2px;
+  display: inline-block;
+  margin-left: -5px;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.button:hover {
+  padding: 10px;
+
+}
+
+.button:hover::after {
+  opacity: 1;
+
+  margin-left: 5px;
+}
+
+
+@keyframes blinking {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+@media screen and (width < 815px)
+{
+  .buttonCont{
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}

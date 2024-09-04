@@ -1,0 +1,525 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+#body {
+  height: 100%;
+  width: 100%;
+}
+header{
+    margin: 5vh 0;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8vw;
+}
+header div{
+    display: flex;
+    height: 100%;
+}
+#theme{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header div img{
+    height: 100px;
+    margin-right: 10px;
+}
+#theme h1:nth-child(1){
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #e62b1e;
+}
+#theme h1:nth-child(2){
+    font-size: 3.3em;
+    font-weight: 900;
+}
+header h2{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+#banner{
+    width: 100%;
+    padding: 0 8vw;
+    margin-bottom: 5vh;
+}
+#banner img{
+    width: 100%;
+}
+#about{
+    width: 100%;
+    padding: 0 8vw;
+    margin-bottom: 5vh;
+}
+#about h2{
+    font-size: 2em;
+    color: #e62b1e;
+    font-weight: 700;
+    margin-bottom: 3vh;
+}
+#about p{
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.4;
+}
+
+#speakers{
+    width: 100%;
+    padding: 0 8vw;
+    margin-bottom: 5vh;
+}
+#speakers h2{
+    font-size: 2em;
+    color: #e62b1e;
+    font-weight: 700;
+    margin-bottom: 4vh;
+}
+#speakerContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+    column-gap: 5vw;;
+}
+.speaker{
+    display : flex;
+    flex-direction : column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.speaker img{
+    width : 20vw;
+    height: 20vw;
+}
+.speaker h3{
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #e62b1e;
+    transition: 0.4s;
+}
+.speaker:hover h3{
+   color: #000;
+}
+#team{
+    width: 100%;
+    padding: 0 8vw;
+    margin-bottom: 5vh;
+}
+#team h2{
+    font-size: 2em;
+    color: #e62b1e;
+    font-weight: 700;
+    margin-bottom: 4vh;
+}
+#teamContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 40px;
+    column-gap: 6vw;;
+}
+.member{
+    display : flex;
+    flex-direction : column;
+    align-items: center;
+    text-align: center;
+}
+.member img{
+    width : 20vw;
+    height: 20vw;
+}
+.member h3{
+    margin-top: 10px;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #e62b1e;
+}
+
+
+@media (max-width: 1000px) {
+    header div img{
+        height: 80px;
+    }
+    #theme h1:nth-child(1){
+        font-size: 1.8em;
+    }
+    #theme h1:nth-child(2){
+        font-size: 2.8em;
+    }
+    header h2{
+        font-size: 1em;
+    }
+    #about p{
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 1.4;
+    }
+    /* #teamContainer, #speakerContainer{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
+    } */
+    
+}
+@media (max-width: 800px) {
+    header div img{
+        height: 65px;
+    }
+    #theme h1:nth-child(1){
+        font-size: 1.4em;
+    }
+    #theme h1:nth-child(2){
+        font-size: 2.3em;
+    }
+    header h2{
+        font-size: 0.9em;
+    }
+    #about p{
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 1.4;
+    }
+    #teamContainer, #speakerContainer{
+        row-gap: 50px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .speaker img , .member img{
+        width : 32vw;
+        height: 32vw;
+    }
+    
+}
+@media (max-width: 640px) {
+    header div img{
+        height: 55px;
+    }
+    #theme h1:nth-child(1){
+        font-size: 1.2em;
+    }
+    #theme h1:nth-child(2){
+        font-size: 2.0em;
+    }
+    header h2{
+        font-size: 0.8em;
+    }
+    #about p{
+        font-size: 0.9em;
+        line-height: 1.2;
+    }
+    #teamContainer, #speakerContainer{
+        row-gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .speaker img , .member img{
+        width : 40vw;
+        height: 40vw;
+    }
+    #team h2, #speakers h2, #about h2{
+        font-size: 1.7em;
+    }
+    .speaker h3{
+        margin-top: 6px;
+        font-size: 1.1em;
+    }
+    .member h3{
+        margin-top: 6px;
+        font-size: 1.1em;
+    }
+    .member h4{
+        font-size: 1em;
+    }
+}
+@media (max-width: 540px) {
+    header{
+        margin: 4vh 0;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 15px;
+    }
+    header div img{
+        height: 16vw;
+    }
+    #theme h1:nth-child(1){
+        font-size: 6vw;
+    }
+    #theme h1:nth-child(2){
+        font-size: 8vw;
+    }
+    header h2{
+        font-size: 3vw;
+    }
+    #about p{
+        font-size: 1.1em;
+        line-height: 1.2;
+    }
+    #teamContainer, #speakerContainer{
+        row-gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .speaker img , .member img{
+        width : 80vw;
+        height: 80vw;
+    }
+    #team h2, #speakers h2, #about h2{
+        font-size: 1.7em;
+        margin-bottom: 1.5vh;
+    }
+    .speaker h3{
+        margin-top: 6px;
+        font-size: 3.8vw;
+    }
+    .member h3{
+        margin-top: 6px;
+        font-size: 4vw;
+    }
+    .member h4{
+        font-size: 3.3vw;
+    }
+    #banner{
+        margin-bottom: 3vh;
+    }
+}
+
+@media (max-width: 380px){
+    #about p{
+        font-size: 1em;
+        line-height: 1.1;
+    }
+    #team h2, #speakers h2, #about h2{
+        font-size: 1.5em;
+        margin-bottom: 1.7vh;
+    }
+    .speaker h3{
+        margin-top: 7px;
+        font-size: 4.5vw;
+    }
+    .member h3{
+        margin-top: 6px;
+        font-size: 5vw;
+    }
+    .member h4{
+        font-size: 4vw;
+    }
+}
+
+
+
+
+
+.popUp {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 3.5vh;
+    padding-top: 2vh;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 300ms ease-in-out;
+    background-color: #fff;
+    border-radius: 7px;
+    z-index: 10;
+    width:  1000px;
+    max-width: 80%;
+
+  }
+  
+  .popUpHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1vh;
+  }
+  .popUp hr {
+    width: 400px;
+    max-width: 80%;
+    border: 0.5px solid #0a2628;
+    margin-bottom: 2.5vh;
+  }
+  .popUpHeader .popUptitle {
+    font-family: var(--font-inter);
+    font-weight: 800;
+    font-size: 1.9em;
+    color: #e62b1e;
+  }
+  .popUpHeader .closeBtn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #0a2628;
+    position: relative;
+    transition: all ease 0.4s;
+  }
+  .circle{
+    display: none;
+    transition: all ease 0.4s;
+  }
+  .closeBtn:hover .circle{
+    position: absolute;
+    display: block;
+    padding-bottom: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e62b1e;
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    border-radius: 50%;
+    transition: 1s;
+  }
+  .speakerImg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .speakerImg img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+  }
+  .speakerImg h2{
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+  }
+  .popUpBody{
+    color: #0a2628;
+    display: flex;
+    gap: 20px;
+  }
+  .popUpBodyimg{
+    height: 250px;
+    width: 250px;
+  }
+  .description p{
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1.2;
+  }
+  #overlay {
+    position: fixed;
+    /* opacity: 1; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.846);
+  }
+
+  @media (max-width: 1000px){
+    .popUp {
+        padding: 3.5vh;
+        padding-top: 2.5vh;
+        transform: translate(-50%, -50%) scale(1 );
+        transition: 300ms linear;
+        border-radius: 7px;
+        z-index: 10;
+        width:  1000px;
+        min-height: 60%;
+        max-width: 90%;
+      }
+      .popUpBody{
+        margin-top: 5%;
+        gap: 20px;
+      }
+  }
+  @media (max-width: 750px){
+    .popUp {
+        padding-top: 2.5vh;
+        max-width: 90%;
+      }
+      .popUpBody{
+        margin-top: 7%;
+      }
+  }
+  @media (max-width: 700px){
+    .popUp {
+        max-width: 90%;
+      }
+      .speakerImg{
+        width: fit-content;
+        float: left;
+        margin-right: 15px;
+      }
+      .speakerImg h2{
+        margin-top: 5px;
+      }
+      .popUpBody{
+        margin-top: 3%;
+        display: inline-block;
+      }
+      .speakerImg img{
+        float: left;
+      }
+      .description{
+        display: inline;
+        /* width: 30%; */
+      }
+      .description p{
+        display: inline;
+      }
+  }
+
+  @media (max-width: 500px){
+    .popUp {
+        padding: 2vh;
+        max-height: 95%;
+        max-width: 95%;
+      }
+      .speakerImg{
+        width: 100%;
+        float:none;
+        margin-right: 0;
+      }
+      .speakerImg h2{
+        margin-top: 5px;
+      }
+      .popUpBody{
+        margin-top: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .speakerImg img{
+        float: none;
+      }
+      .popUpBodyimg{
+        height: 50vw;
+        width: 50vw;
+      }
+      .description{
+        display: block;
+        text-align: center;
+        /* width: 30%; */
+      }
+      .description p{
+        display: inline;
+        font-size: 4vw;
+      }
+  }
+  @media (max-width: 400px){
+    .popUpHeader{
+        margin-bottom: 0.5vh;
+    }
+    .popUpHeader .popUptitle{
+        font-size: 1.5em;
+    }
+    .description p{
+        font-weight: 400;
+        font-size: 4vw;
+        line-height: 1.2;
+      }
+
+  }

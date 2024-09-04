@@ -1,0 +1,216 @@
+.main {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.content {
+    width: 50%;
+    margin-left:5%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: red;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 5% 0;
+}
+
+.para {
+    margin: 60px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.image {
+    margin: auto;
+    height: 300px;
+}
+
+.formContainer {
+    width: 50%;
+    margin-right: 5%;
+    margin-left: 8%;
+    margin-top: 2%;
+}
+
+.form
+{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formField{
+    margin-bottom: 20px;
+    display: block;
+    outline: none;
+    border: none;
+    background-color: #dadada;
+    width: 100%;
+    border-radius: 0;
+    border-width: 0;
+    font-size: 14px;
+    padding: 16px;
+}
+
+.formField::placeholder {
+    font-family: 'Inter';
+}
+
+.formField:focus {
+    border: none;
+}
+
+.comments {
+    padding-bottom: 40px;
+}
+
+.checkboxContainer {
+    margin: 30px 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: start;
+    text-align: start;
+    align-items: center;
+
+}
+
+.checkbox {
+    margin: 0;
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+.button {
+    background-color: red;
+    border: none;
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.button:hover {
+    scale: 105%;
+}
+
+.arrow {
+    display: inline-block;
+    margin: 0 0px 5px 8px;
+    font-size: 30px;
+}
+
+.successMsg {
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.privacy {
+    font-size: 15px;
+    margin-top: 40px;
+    font-weight: 300;
+}
+
+.required {
+    font-size: 14px;
+    margin-top: 15px;
+    font-weight: 300;
+}
+
+@media screen and (width < 1000px) {
+    .main {
+        flex-direction: column;
+
+    }
+
+    .content {
+        margin: 50px 0px;
+        width: 80%;
+    }
+
+    .title {
+        margin-bottom: 20px;
+        margin-top: 5%;
+    }
+
+    .para {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    .formContainer {
+        width: 80%;
+        margin: 0;
+    }
+}
+
+@media (width<800px) {
+    .image {
+        height: 300px;
+    }
+}
+
+@media (width<550px) {
+    .image {
+        height: 200px;
+    }
+}
+
+@media (width < 500px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .para {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .formField {
+        font-size: 18px;
+    }
+
+    .checkboxContainer {
+        font-size: 16px;
+    }
+
+    .button {
+        font-size: 16px;
+        width: 120px;
+    }
+
+    .arrow {
+        font-size: 25px;
+    }
+}
+
+@media screen and (width<380px) {
+
+    .image {
+        height: 150px;
+    }
+}
+
+@media screen and (width<310px) {
+    .title {
+        font-size: 26px;
+    }
+}
